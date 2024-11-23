@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView items="{{ entries }}" itemTap="{{ onEntryTap }}" class="notes-list">
+    <ListView.itemTemplate>
+        <StackLayout class="entry-card">
+            <Label text="{{ date }}" class="text-sm text-gray-600" />
+            <Label text="{{ title }}" class="text-lg font-bold" />
+            <Label text="{{ content }}" textWrap="true" class="text-gray-700" />
+        </StackLayout>
+    </ListView.itemTemplate>
+</ListView>

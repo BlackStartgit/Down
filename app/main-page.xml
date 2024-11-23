@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="diary-page">
+    <ActionBar title="My Diary">
+        <ActionItem text="New Entry" tap="{{ onNewEntry }}" ios.position="right" />
+    </ActionBar>
+    
+    <TabView selectedIndex="{{ selectedTab }}">
+        <TabView.items>
+            <TabViewItem title="Notes">
+                <TabViewItem.view>
+                    <include src="~/components/notes/notes-list.xml" />
+                </TabViewItem.view>
+            </TabViewItem>
+            
+            <TabViewItem title="Drawing">
+                <TabViewItem.view>
+                    <include src="~/components/drawing/drawing-panel.xml" />
+                </TabViewItem.view>
+            </TabViewItem>
+            
+            <TabViewItem title="Files">
+                <TabViewItem.view>
+                    <include src="~/components/files/file-list.xml" />
+                </TabViewItem.view>
+            </TabViewItem>
+        </TabView.items>
+    </TabView>
+</Page>

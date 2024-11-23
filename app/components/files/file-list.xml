@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView items="{{ savedFiles }}" itemTap="{{ onFileTap }}" class="file-list">
+    <ListView.itemTemplate>
+        <GridLayout columns="*, auto" class="entry-card">
+            <Label col="0" text="{{ name }}" />
+            <Button col="1" text="Delete" tap="{{ $parent.onDeleteFile }}" 
+                    class="action-button delete-button" />
+        </GridLayout>
+    </ListView.itemTemplate>
+</ListView>

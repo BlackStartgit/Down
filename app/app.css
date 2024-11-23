@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.diary-page {
+    background-color: #f5f5f5;
+}
+
+.entry-card {
+    background-color: white;
+    border-radius: 10;
+    margin: 10;
+    padding: 15;
+    elevation: 3;
+}
+
+.canvas-container {
+    background-color: white;
+    border-width: 1;
+    border-color: #ddd;
+    border-radius: 5;
+}
+
+.action-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10;
+    border-radius: 5;
+    margin: 5;
+}
+
+.delete-button {
+    background-color: #f44336;
+}
+
+.save-button {
+    background-color: #2196F3;
+}

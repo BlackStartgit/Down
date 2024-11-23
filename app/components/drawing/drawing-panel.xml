@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout rows="*, auto" class="drawing-panel">
+    <ContentView row="0" class="canvas-container">
+        <Canvas id="drawingCanvas" draw="{{ onDraw }}" />
+    </ContentView>
+    <StackLayout row="1" orientation="horizontal" horizontalAlignment="center">
+        <Button text="Clear" tap="{{ clearCanvas }}" class="action-button" />
+        <Button text="Save" tap="{{ saveDrawing }}" class="action-button save-button" />
+    </StackLayout>
+</GridLayout>
